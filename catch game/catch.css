@@ -1,0 +1,55 @@
+body{
+    background-color: rgb(15, 248, 248);
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.game-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#gameboard{
+    border: 2px solid;
+}
+.h1{
+    font-size: small;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    text-decoration: underline;
+    animation-name: title;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes title {
+    0%{
+        color: rgb(214, 21, 21);
+    }
+    10%{
+        color: rgb(230, 255, 7);
+    }
+    30%{
+        color: rgb(56, 21, 214);
+    }
+    50%{
+        color: rgb(240, 0, 248);
+    }
+    100%{
+        color: blueviolet;
+    }
+    
+}
+.score{
+    font-size:2em;
+    position: absolute;
+    top: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: deeppink;
+}
+.scoreval{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 217, 0);
+}
